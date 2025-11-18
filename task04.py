@@ -1,4 +1,4 @@
-# final_task4.py — copy this, set FILENAME to your CSV, and run
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -7,8 +7,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, classification_report, roc_auc_score, roc_curve, auc
 import matplotlib.pyplot as plt
 
-# --------------- CHANGE ONLY THIS ----------------
-FILENAME = "C:\\Users\\G HARSHITHA\\Downloads\\archive (5).zip"   # <- replace with your CSV filename (example: "breast_cancer.csv")
+
+FILENAME = "C:\\Users\\G HARSHITHA\\Downloads\\archive (5).zip"   
 # --------------------------------------------------
 
 # 1. Load
@@ -100,3 +100,4 @@ plt.show()
 threshold = 0.6
 y_pred_custom = (y_prob >= threshold).astype(int)
 print(f"\nConfusion Matrix with threshold={threshold}:\n", confusion_matrix(y_test, y_pred_custom))
+
